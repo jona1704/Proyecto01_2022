@@ -1,0 +1,84 @@
+
+
+<!-- Pixel:
+- Unidad básica de una imagen digitalizada en pantalla a base de puntos de color o en escala de grises.
+- Otras Unidades:
+    - 1px = 0.0625em;
+    - 1em = 16px
+    - 1px = 0.063rem
+    - 1rem = 16px
+
+Breakpoints:
+- punto de parada, punto de interrupción, punto de quiebre o parada dinámica
+- Son las medidas de anchura en donde se realizan saltos para el diseño responsive y se aplican los estilos CSS concretos para unas determinadas media queries. Es decir, los breakpoints son los saltos en los que la pantalla cambia de layout.
+- Existen breakpoints estandarizados que debemos de tener en cuenta:
+    - Móviles: entre 320 y 480 píxeles.
+    - Tablets: entre 768 y 1024 píxeles.
+    - Pantallas grandes: más de 1200 píxeles. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Nunito:wght@400;700&family=Open+Sans&family=Raleway:wght@200&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Páginas responsivas</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        nav{
+            background-color: darkgoldenrod;
+        }
+
+        nav ul{
+            display: flex;
+            list-style-type: none; /* Quitar viñetas */
+            justify-content: space-around;
+        }
+
+        /* nav ul li{
+
+        } */
+
+        nav ul li a{
+            font-size: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color:black;
+            font-weight: bold;
+        }
+
+        @media screen and (min-width: 480px){
+            body{
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width: 768px){
+            body{
+                background-color:burlywood;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Opcion 1</a></li>
+            <li><a href="">Opcion 2</a></li>
+            <li><a href="">Opcion 3</a></li>
+            <li><a href="">Opcion 4</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

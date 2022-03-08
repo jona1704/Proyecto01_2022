@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: beige;
+        }
+
+        .contenedor1{
+            width: 800px;
+            height: 400px;
+            background-color: chocolate;
+            margin: 20px auto;
+            display: flex;
+            /* flex-direction: row; /* row | column | row-reverse | column-reverse */
+            /* flex-wrap: nowrap; wrap | nowrap */
+            flex-flow: row wrap; /* <flex-direction> <flex-wrap> */
+            justify-content: space-evenly; /* Alinear elementos con respecto al eje principal */
+            /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly ; */
+        }
+
+        .contenedor2{
+            width: 800px;
+            height: 400px;
+            background-color: chocolate;
+            margin: 20px auto;
+            display: flex;
+            /* flex-direction: row; /* row | column | row-reverse | column-reverse */
+            /* flex-wrap: nowrap; wrap | nowrap */
+            flex-flow: column wrap; /* <flex-direction> <flex-wrap> */
+            justify-content: space-evenly; /* Alinear elementos con respecto al eje principal */
+            /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly ; */
+
+            /* Para trabajar con el eje secundario tenemos align-items y align-content */
+            align-items: stretch; /* streh | flex-start | flex-end | center | baseline */
+            align-content: space-evenly; /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+        }
+
+        .items{
+            width: 100px;
+            height: 100px;
+            background-color: darkseagreen;
+            border: 1px solid #000;
+
+        }
+
+        /* .items:nth-child(3){
+            font-size: 30px;
+            background-color: darkcyan;
+        } */
+    </style>
+</head>
+<body>
+    <div class="contenedor1">
+        <div class="items">Elemento 1</div>
+        <div class="items">Elemento 2</div>
+        <div class="items">Elemento 3</div>
+        <div class="items">Elemento 4</div>
+    </div>
+    <div class="contenedor2">
+        <div class="items">Elemento 1</div>
+        <div class="items">Elemento 2</div>
+        <div class="items">Elemento 3</div>
+        <div class="items">Elemento 4</div>
+        <div class="items">Elemento 5</div>
+        <div class="items">Elemento 6</div>
+        <div class="items">Elemento 7</div>
+        <div class="items">Elemento 8</div>
+        <div class="items">Elemento 9</div>
+        <div class="items">Elemento 10</div>
+        <div class="items">Elemento 11</div>
+        <div class="items">Elemento 12</div>
+        <div class="items">Elemento 13</div>
+        <div class="items">Elemento 14</div>
+        <div class="items">Elemento 15</div>
+        <div class="items">Elemento 16</div>
+        <div class="items">Elemento 17</div>
+        <div class="items">Elemento 18</div>
+        <div class="items">Elemento 19</div>
+        <div class="items">Elemento 20</div>
+        <div class="items">Elemento 21</div>
+        <div class="items">Elemento 22</div>
+        <div class="items">Elemento 23</div>
+        <div class="items">Elemento 24</div>
+    </div>
+    </div>
+</body>
+</html>
