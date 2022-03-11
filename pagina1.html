@@ -1,5 +1,3 @@
-
-
 <!-- Pixel:
 - Unidad básica de una imagen digitalizada en pantalla a base de puntos de color o en escala de grises.
 - Otras Unidades:
@@ -15,8 +13,6 @@ Breakpoints:
     - Móviles: entre 320 y 480 píxeles.
     - Tablets: entre 768 y 1024 píxeles.
     - Pantallas grandes: más de 1200 píxeles. -->
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,13 +54,13 @@ Breakpoints:
             font-weight: bold;
         }
 
-        @media screen and (min-width: 480px){
+        @media screen and (max-width: 480px){
             body{
                 background-color: blue;
             }
         }
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 480px) and (max-width: 768px){
             body{
                 background-color:burlywood;
             }
